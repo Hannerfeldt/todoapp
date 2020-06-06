@@ -1,0 +1,4 @@
+<p>Done</p>
+<div *ngFor="let d of doneList">
+  <app-doneitem [doneItem]="d" (doneChecked)="sendToTodo($event)" (removeDoneEmitter)="removeDoneFromList($event)"></app-doneitem>
+</div>

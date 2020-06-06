@@ -1,0 +1,3 @@
+<app-addtodo (newTodoEmitter)="todoChild.addToList($event)"></app-addtodo>
+<app-todolist #todoChild (sendToDoneEmitter)="doneChild.addToDone($event)"></app-todolist>
+<app-donelist #doneChild (sendToTodoEmitter)="todoChild.addToList($event)"></app-donelist>

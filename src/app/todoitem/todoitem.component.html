@@ -1,0 +1,6 @@
+<div class="container" (click)="itemChecked()">
+  <i class="{{todoItem.icon}}"></i>
+  <p>{{todoItem.name}}</p>
+  <p>{{todoItem.date | date:'dd MMM : HH:mm:ss'}}</p>
+  <div id="delete" (click)="removeTodo()">&times;</div>
+</div>

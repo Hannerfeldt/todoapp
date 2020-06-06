@@ -1,0 +1,18 @@
+<div id="addtodo-container">
+  <div id="icon-menu">
+    <i id="icon"></i>
+  </div>
+  <div id="icon-dropdown">
+    <i (click)="addIcon($event)" class="fas fa-book"></i>
+    <i (click)="addIcon($event)" class="fas fa-dumbbell"></i>
+    <i (click)="addIcon($event)" class="fas fa-suitcase"></i>
+    <i (click)="addIcon($event)" class="fas fa-glass-cheers"></i>
+    <i (click)="addIcon($event)" class="fas fa-plane"></i>
+    <i (click)="addIcon($event)" class="fas fa-pizza-slice"></i>
+    <i (click)="addIcon($event)" class="fas fa-soap"></i>
+    <i (click)="addIcon($event)" class="fas fa-car-side"></i>
+    <i (click)="addIcon($event)" class="fas fa-shopping-cart"></i>
+    <i (click)="addIcon($event)" class="fas fa-cogs"></i></div>
+  <input type="text" #inputField>
+  <button (click)="addTodo(inputField.value)">Lägg till todo</button>
+</div>

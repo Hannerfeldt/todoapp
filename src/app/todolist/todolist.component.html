@@ -1,0 +1,5 @@
+<p>Todo</p>
+<div *ngFor="let i of todoList">
+  <app-todoitem [todoItem]="i" (todoChecked)="sendToDone($event)" (removeTodoEmitter)="removeTodoFromList($event)"></app-todoitem>
+</div>
+<button (click)="sortTodo()">Sortera efter bokstavsordning</button>

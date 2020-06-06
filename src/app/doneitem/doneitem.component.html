@@ -1,0 +1,6 @@
+<div (click)="itemChecked()" class="container">
+  <i></i>
+  <p>{{doneItem.name }}</p>
+  <p>{{doneItem.date | date:'dd MMM : HH:mm:ss'}}</p>
+  <div id="delete" (click)="removeDone()">&times;</div>
+</div>
